@@ -1,0 +1,10 @@
+
+
+>> koneksi ke database agar dapat mengakses data query yang digunakan dalam script 
+   <?php
+    $db = new mysqli('localhost','<user>','<password>','bootcamp');
+   ?>
+
+
+>>Dengan menggunakan query sebagai berikut kita dapat menampilkan data seperti yang diminta
+"SELECT nama.nama, kerja.nama,salary FROM nama,kerja,salary WHERE nama.id_work=kerja.id and nama.id_salary=salary.id"
